@@ -1,0 +1,26 @@
+/*From the Cats example*/
+li {
+  background: white;
+  margin: 5px;
+  padding: 5px;
+  width: 25%;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  background: white;
+  margin: 5px;
+  padding: 5px;
+  width: 25%;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+h1 {
+	text-align: center;
+}

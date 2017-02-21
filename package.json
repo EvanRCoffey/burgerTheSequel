@@ -1,0 +1,33 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "HW - week 14",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/REvanCof/burger.git"
+  },
+  "author": "R. Evan Coffey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/REvanCof/burger/issues"
+  },
+  "homepage": "https://github.com/REvanCof/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.13.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
+  },
+  "engines": {
+    "node": "6.9.4"
+  }
+}
