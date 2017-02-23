@@ -21,3 +21,7 @@ ___________________________________________________________
   * A Customer's name cannot be null
 
 * Order the Burgers you send back to the user in alphabetical order using the Sequelize "order" option.
+
+
+
+get customers to display

@@ -29,6 +29,18 @@
   {{/each}}
 </ul>
 
+<h2>Customers</h2>
+
+<ul>
+  {{#each customers}}
+    <li>
+      {{this.customer_name}}
+      {{this.burgers_purhcased}}
+      {{this.id}}
+    </li>
+  {{/each}}
+</ul>
+
 <h2>Add a Burger</h2>
 <form class="create-update-form" action="/" method="POST">
 
@@ -37,7 +49,23 @@
     <input type="text" id="bu" name="name">
   </div>
 
+  <div class="form-group">
+    <label for="ca">Customer ID:</label>
+    <input type="text" id="bu" name="idCustomer">
+  </div>
+
   <button type="submit">Add Burger</button>
+</form>
+
+<h2>Add a Customer</h2>
+<form class="create-update-form" action="/newCustomer" method="POST">
+
+  <div class="form-group">
+    <label for="ca">Customer Name:</label>
+    <input type="text" id="bu" name="nameCustomer">
+  </div>
+
+  <button type="submit">Add Customer</button>
 </form>
 
 
