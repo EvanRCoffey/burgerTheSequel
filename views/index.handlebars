@@ -23,8 +23,21 @@
     {{#if this.devoured}}
       <li>
         {{this.burger_name}}
+        Belongs to customer {{this.CustomerId}}
       </li>
     {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Customers</h2>
+
+<ul>
+  {{#each customers}}
+    <li>
+      Customer name: {{this.customer_name}}
+      Burgers eaten: {{this.burgers_eaten}}
+      Customer ID: {{this.id}}
+    </li>
   {{/each}}
 </ul>
 
@@ -36,9 +49,24 @@
     <input type="text" id="bu" name="name">
   </div>
 
+  <div class="form-group">
+    <label for="ca">Customer ID:</label>
+    <input type="text" id="bu" name="idCustomer">
+  </div>
+
   <button type="submit">Add Burger</button>
 </form>
 
+<h2>Add a Customer</h2>
+<form class="create-update-form" action="/newCustomer" method="POST">
+
+  <div class="form-group">
+    <label for="ca">Customer Name:</label>
+    <input type="text" id="bu" name="nameCustomer">
+  </div>
+
+  <button type="submit">Add Customer</button>
+</form>
 
 
 

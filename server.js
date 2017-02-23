@@ -3,6 +3,7 @@ var methodOverride = require('method-override');
 var bodyParser = require ('body-parser');
 var exphbs = require("express-handlebars");
 var url = require("url");
+var db = require("./models");
 
 var app = express();
 var PORT = process.env.PORT || 8080;
@@ -30,8 +31,10 @@ var routes = require("./controllers/burgers_controller.js");
 app.use("/", routes);
 
 
-// Starts the server to begin listening
-// =============================================================
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
-});
+
+//LISTENER
+db.sequelize.sync().then(function() {
+	app.listen(PORT, function() {
+		console.log("Listening on port %s", PORT);
+	});
+})
